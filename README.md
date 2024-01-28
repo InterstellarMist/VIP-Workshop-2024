@@ -36,3 +36,9 @@ From GitHub website,
 5. Wait for the pull request to be approved.
 
 ### Downloading the repository
+Using GitHub Desktop,
+
+1. Sign in using GitHub account
+2. Click `Clone a repository from the Internet`, go to URL tab and input the repository link `https://github.com/InterstellarMist/VIP-Workshop-2024.git`
+
+Using git CLI, `git clone https://github.com/InterstellarMist/VIP-Workshop-2024.git`
