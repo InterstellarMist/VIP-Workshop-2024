@@ -25,9 +25,9 @@ For a basic overview, we will be doing this from the GitHub website and the GitH
 - Create GitHub account
 - Download [GitHub Desktop](https://desktop.github.com)
 
-### Uploading Files
+## Uploading Files
 
-#### Manual Method (Pull Request)
+### Manual Method (Pull Request)
 Request collaborator access first. Then from GitHub website, 
 
 1. Click on the `Add File > Upload Files` then upload necessary files
@@ -63,5 +63,17 @@ For SSH, follow the steps below
 3. Add a title `Dell XPS 15 Laptop` and paste the key.
 4. Test the SSH connection using `ssh -T git@github.com`
 
+## Basic Usage/Flow
 
+1. After making changes: `git add .`. This puts all modified and created files on the staging area, for commit.
+2. Commit changes: `git commit -m "Message"`. This finalizes the change as a new version or state. The message should be short but descriptive like "uploaded neural network code output".
+3. Pull from source first: `git pull`. This ensures that your local repository is synchronized before uploading to the remote repository. Resolve conflicts by merging, or manually fixing.
+4. Push changes to the remote repo: `git push origin main`
 
+Summary:
+```
+git add .
+git commit -m "Message"
+git pull
+git push origin main
+```
