@@ -26,7 +26,9 @@ For a basic overview, we will be doing this from the GitHub website and the GitH
 - Download [GitHub Desktop](https://desktop.github.com)
 
 ### Uploading Files
-From GitHub website, 
+
+#### Manual Method (Pull Request)
+Request collaborator access first. Then from GitHub website, 
 
 1. Click on the `Add File > Upload Files` then upload necessary files
 2. Add a descriptive text on the changes made i.e. `added github workshop files`
@@ -35,10 +37,31 @@ From GitHub website,
 4. Put a title then click `Make Pull Request`. This allows to administrator to review changes before pushing changes to the main branch.
 5. Wait for the pull request to be approved.
 
-### Downloading the repository
-Using GitHub Desktop,
+### Clone Approach (`git clone`)
+
+**Using GitHub Desktop,**
 
 1. Sign in using GitHub account
 2. Click `Clone a repository from the Internet`, go to URL tab and input the repository link `https://github.com/InterstellarMist/VIP-Workshop-2024.git`
 
-Using git CLI, `git clone https://github.com/InterstellarMist/VIP-Workshop-2024.git`
+**Using CLI**
+
+Setup git in your local machine. Make sure to set the git config
+
+```
+git config --global user.name "username"
+git config --global user.email "email"
+```
+Then clone using https
+```
+git clone https://github.com/InterstellarMist/VIP-Workshop-2024.git
+```
+For SSH, follow the steps below
+
+1. Generate passkey using `ssh-keygen -t rsa -C "email"`
+2. Upload ssh public key to GitHub. Go to `profile settings > SSH and GPG keys > New SSH key`. Copy the generated key.
+3. Add a title `Dell XPS 15 Laptop` and paste the key.
+4. Test the SSH connection using `ssh -T git@github.com`
+
+
+
