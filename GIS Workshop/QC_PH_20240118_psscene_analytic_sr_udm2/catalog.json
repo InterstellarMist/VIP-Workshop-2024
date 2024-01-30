@@ -1,0 +1,18 @@
+{
+  "type": "Catalog",
+  "id": "5bb882c5-5ef1-42e7-9535-274901020095",
+  "stac_version": "1.0.0",
+  "description": "QC_PH_20240118",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./PSScene/PSScene_collection.json",
+      "type": "application/json"
+    }
+  ]
+}
